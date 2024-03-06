@@ -1,0 +1,303 @@
+:root{
+    --main-color: #fd56e1;
+}
+
+body{
+    font-family: 'Open Sans', sans-serif;
+}
+
+.container{
+    width: 1170px;
+    padding-left: 15px;
+    padding-right: 15px;
+    margin: auto;
+}
+
+/* start landing page */
+.landing-page{
+    min-height: 100vh;
+    background-image: url(../imgs/2.jpg);
+    background-size: cover;
+    position: relative;
+}
+.landing-page .overlay{
+    background-color: #00000061;
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    left: 0;
+    top: 0;
+    z-index: 1;
+}
+.header-area{
+    position: relative;
+    z-index: 2;
+    color: #fff;
+    display: flex;
+    padding: 10px;
+}
+.header-area .logo{
+    width: 300px;
+    padding: 15px;
+    font-weight: bold;
+    color: var(--main-color);
+    font-size: 25px;
+}
+.header-area .links{
+    list-style: none;
+    width: 100%;
+    text-align: right;
+    padding-left: 0;
+    padding-right: 20px;
+    font-size: 15px;
+}
+.header-area .links li{
+    display: inline-block;
+    margin-left: 10px;
+}
+.header-area .links li a{
+    color: #fff;
+    text-decoration: none;
+    transition: .3s;
+}
+.header-area .links li a:hover,
+.header-area .links li a.active{
+    color: var(--main-color);
+}
+.intrduction-text{
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    z-index: 20;
+    color: #fff;
+    text-align: center;
+}
+.intrduction-text h1{
+    color: var(--main-color);
+    font-size: 60px;
+    margin: 0 0 12px;
+}
+.intrduction-text p{
+    line-height: 1.6;
+    font-size: 20px;
+    margin: 0;
+}
+/* end landing page */
+
+/* start about us */
+.about-us{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    display: flex;
+}
+.about-us .info-box{
+    flex: 1;
+    padding: 30px;
+}
+.about-us .info-box h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 10px;
+}
+.about-us .info-box p{
+    line-height: 1.8;
+    color: #444444;
+    margin: 0;
+}
+.about-us .iamge-box{
+    flex: 1;
+    text-align: center;
+}
+.about-us .iamge-box img{
+    width: 250px;
+    height: 250px;
+}
+
+/* end about us */
+
+/* start articles */
+.container_menu{
+    margin-right: 0;
+}
+.container_menu nav{
+    position: absolute;
+    margin-top: 120px;
+    left: 480px;
+    transform: translate(-50px, -50px);
+    background: #1b1b1b;
+    width: 400px;
+    line-height: 40px;
+    padding: 8px 25px;
+    border-radius: 5px;
+}
+
+.container_menu nav label{
+    color: white;
+    font-size: 22px;
+    font-weight: 500;
+    display: block;
+    cursor: pointer;
+}
+
+.container_menu .button span{
+    float: right;
+    line-height: 35px;
+    color: white;
+}
+.container_menu nav ul{
+    position: absolute;
+    background: #1b1b1b;
+    list-style: none;
+    top: 75px;
+    left: 0;
+    width: 92.5%;
+    border-radius: 5px;
+    display: none;
+}
+
+[id^=btn]:checked + ul{
+    display: block;
+}
+
+.container_menu nav .menu:before{
+    position: absolute;
+    content: '';
+    height: 20px;
+    width: 20px;
+    background: #1b1b1b;
+    right: 20px;
+    top: -10px;
+    transform: rotate(45deg);
+    z-index: -1;
+}
+
+.container_menu nav ul li{
+    line-height: 40px;
+    padding: 8px 20px;
+    cursor: pointer;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.2);
+}
+
+.container_menu nav ul li label{
+    font-size: 18px;
+}
+
+.container_menu nav ul li a{
+    color: white;
+    text-decoration: none;
+    font-size: 18px;
+    display: block;
+}
+
+.container_menu nav ul li a:hover,
+.container_menu nav ul li label:hover{
+    color: var(--main-color);
+}
+
+.container_menu nav ul ul{
+    position: static; 
+}
+
+.container_menu nav ul ul li{
+    line-height: 30px;
+    padding-left: 30px;
+    border-bottom: none;
+}
+
+.container_menu nav ul ul li a{
+    color: #e6e6e6;
+    font-size: 17px;
+}
+
+.container_menu nav input{
+    display: none;
+}
+/* end articles */
+/* start contact us */
+.contact{
+    min-height: 600px;
+    background-image: url(../imgs/wp1936868.webp);
+    background-size: cover;
+    margin-top: 800px;
+    padding-top: 80px;
+    padding-bottom: 80px;
+    position: relative;
+}
+.contact .overlay{
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    background-color: rgba(255, 255, 255, 0.445);
+}
+.contact .container{
+    position: relative;
+    z-index: 2;
+}
+.contact h2{
+    font-weight: bold;
+    font-size: 30px;
+    color: var(--main-color);
+    margin: 0 0 60px;
+    text-align: center;
+}
+.contact form{
+    overflow: hidden;
+    max-width: 600px;
+    margin: auto;
+}
+.contact form .left{
+    float: left;
+    width: 44%;
+    
+}
+.contact form .right{
+    float: right;
+    width: 44%;
+}
+.contact form input:not([type="submit"]),
+.contact form textarea{
+    display: block;
+    width: 100%;
+    padding: 5%;
+    margin-bottom: 15px;
+    border: 1px solid #fcfcfc;
+    background-color: rgba(0, 0, 0, 0.274);
+}
+.contact form input:not([type="submit"]):focus,
+.contact form textarea:focus{
+    outline: 1px solid var(--main-color);
+}
+.contact form input{
+    height: 40px;
+}
+.contact form textarea{
+    height: 210px;
+}
+.contact form input[type="submit"] {
+    padding: 10px;
+    width: 100%;
+    border-color: transparent;
+    background-color: var(--main-color);
+    color: #fff;
+    cursor: pointer;
+}
+.contact form textarea:focus::-webkit-input-placeholder,
+.contact form input:not([type="submit"]):focus::-webkit-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+.contact form textarea:focus::-ms-input-placeholder,
+.contact form input:not([type="submit"]):focus::-ms-input-placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+.contact form textarea:focus::placeholder,
+.contact form input:not([type="submit"]):focus::placeholder {
+    opacity: 0;
+    transition: .3s;
+}
+/* end contact us */
